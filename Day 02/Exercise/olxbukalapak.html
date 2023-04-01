@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>olxbukalapak</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      span {
+        font-weight: 700;
+        font-family: sans-serif;
+        font-size: 14px;
+        background-color: #f7f7f7;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+      }
+      input {
+        width: 300px;
+        background-color: #ffffff;
+        border: none;
+        height: 35px;
+        outline: none;
+        padding-left: 10px;
+      }
+      button {
+        background-color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+      select {
+        border: none;
+        cursor: pointer;
+      }
+
+      .navbarluar1 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 45px;
+        background-color: #f7f7f7;
+      }
+      .navbarluar2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .navbardalam1 {
+        width: 1300px;
+        padding: 0 25px;
+        background-color: #f7f7f7;
+        display: flex;
+        align-items: center;
+      }
+      .navbardalam2 {
+        width: 1300px;
+        padding: 0 25px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+      }
+      .subnavbar {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 15px;
+        background-color: #f7f7f7;
+      }
+      .mainnavbar {
+        display: grid;
+        max-width: 500px;
+        grid-template-columns: 7fr 1fr;
+        align-items: center;
+      }
+      .icnsrc {
+        min-width: 1180px;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #e0e0e0;
+      }
+      .img {
+        width: 200px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .src {
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #c0c7d1;
+        border-radius: 3px;
+      }
+      .mg {
+        border-left: 1px solid #e0e0e0;
+      }
+      .selector {
+        width: 300px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .dalo {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .font {
+        font-weight: 700;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbarluar1">
+      <div class="navbardalam1">
+        <div class="subnavbar">
+          <span><a href="#">Download app</a></span>
+          <span><a href="#">Mulai Jualan</a></span>
+          <span><a href="#">Jadi Mitra</a></span>
+          <span><a href="#">BukaBantuan</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="navbarluar2">
+      <div class="navbardalam2">
+        <div class="mainnavbar">
+          <div class="icnsrc">
+            <div class="img">
+              <img
+                src="https://assets.bukalapak.com/sigil/bukalapak-logo-primary.svg"
+                alt="logo bukalapak"
+                width="150px"
+                height="40px"
+              />
+            </div>
+            <div class="src">
+              <input
+                type="text"
+                name="search"
+                id="src"
+                placeholder="Aku mau belanja..."
+                height="24"
+              />
+              <button title="cari" class="mg" type="submit">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp1urW_9tUaunari3Y-U1nTk5y9YKV6v3D0acp6nGW7A&s"
+                  alt=""
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </div>
+            <div class="selector">
+              <select name="" id="">
+                <option value="kategori" disabled selected>
+                  <p class="font">Kategori</p>
+                </option>
+              </select>
+              <select name="produk">
+                <option value="" disabled selected>
+                  <p class="font">Produk virtual</p>
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="dalo">
+            <button class="font">Daftar</button>
+            <button class="font">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
