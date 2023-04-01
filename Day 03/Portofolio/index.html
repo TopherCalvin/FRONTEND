@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <style>
+      @media screen and (max-width: 519px) {
+        .flex-left {
+          display: flex;
+          width: 300px;
+          justify-content: space-between;
+        }
+      }
+      @media screen and (min-width: 520px) {
+        .flex-left {
+          display: flex;
+          width: 50%;
+        }
+      }
+      body,
+      h1,
+      p {
+        margin: 0;
+      }
+      h1,
+      p {
+        padding: 20px 0;
+      }
+      figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 800;
+        color: #817d87;
+        background-color: white;
+        padding: 20px 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      .navbarluar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        background-color: #2d2933;
+      }
+      .navbardalam {
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .mainpage {
+        width: 100%;
+        background-color: #3b383f;
+      }
+      .maincontent {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #3b383f;
+      }
+      .selfintro {
+        padding-left: 10px;
+      }
+      .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-shrink: 1;
+        padding-left: 10px;
+      }
+      hr {
+        border-color: #625f66;
+      }
+      button {
+        background-color: #f7914d;
+        border: none;
+        height: 60px;
+        border-radius: 15px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .page {
+        background-color: #5b5760;
+      }
+      .exp {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 15px 0;
+      }
+      .porto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .fontwhite {
+        color: white;
+      }
+      .font80 {
+        font-size: 80px;
+      }
+      .font50 {
+        font-size: 50px;
+      }
+      .font {
+        font-size: 20px;
+      }
+      .just {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .fontfr {
+        text-align: left;
+        color: #dbd9dd;
+      }
+      .fontbck {
+        color: #bcbabe;
+      }
+      .border-top {
+        border-top: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbarluar">
+      <div class="navbardalam">
+        <img src="nightwing.png" alt="logo" width="80px" height="30px" />
+        <i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+      </div>
+    </div>
+    <div class="mainpage">
+      <div class="maincontent">
+        <div class="selfintro">
+          <h2 class="fontwhite font50">i'm a web developer</h2>
+          <h1 class="fontwhite font80">Topher Grayson</h1>
+          <p class="fontwhite font">
+            <em>Image by <a href="#" class="fontwhite">Topher😎😎</a></em>
+          </p>
+          <hr style="color: #625f66" />
+          <br />
+          <div class="info">
+            <div class="just">
+              <div width="1000px" class="fontfr font">Date of Birth:</div>
+              <div class="flex-left">
+                <div class="fontbck font">Oktober 30, 2000</div>
+              </div>
+            </div>
+            <div class="just">
+              <div width="100px" class="fontfr font">Address:</div>
+              <div class="flex-left">
+                <div class="fontbck font">
+                  Jl. XimX No. XX, Rt/Rw. 0X1/00X, Duren Tiga, PanXXraX, Jakarta
+                  Selatan, DKI Jakarta, NKRI, 1XX60
+                </div>
+              </div>
+            </div>
+            <div class="just">
+              <div width="100px" class="fontfr font">E-mail:</div>
+              <div class="flex-left">
+                <div class="fontbck font">Topher😎😎@mail.com</div>
+              </div>
+            </div>
+            <div class="just">
+              <div width="100px" class="fontfr font">Phone:</div>
+              <div class="flex-left">
+                <div class="fontbck font">+628 212 230 XXXX</div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <center>
+            <button>
+              <a class="font fontwhite">DOWNLOAD CV</a>
+              <i class="fa-solid fa-download fa-lg" style="color: #ffffff"></i>
+            </button>
+          </center>
+        </div>
+        <div class="dick">
+          <img src="./dick.png" alt="Dick Grayson" height="auto" width="100%" />
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="exp">
+        <h1 class="fontfr" style="text-align: center">Experience</h1>
+        <p class="fontbck font" style="text-align: center">
+          Nunc sed blandit libero volutpat sed cras. Risus quis varius quam
+          quisque id. Semper auctor neque vitae tempus quam pellentesque.
+        </p>
+        <div class="just border-top">
+          <div width="1000px" class="fontfr font">
+            September, 2016 – May, 2017
+          </div>
+          <div class="flex-left">
+            <div class="fontbck flex-column">
+              <div
+                class="font"
+                style="padding-bottom: 10px; color: #f7914d; font-weight: 700"
+              >
+                Junior Developer
+              </div>
+              <div class="font">
+                Sed quia consequuntur magni dolores eos quira tione estera
+                voluptatem sequi nesciunt nuncera permano nence of the stars
+                from which we spring.Junior Developer Sed quia consequuntur
+                magni dolores eos quira tione estera voluptatem sequi nesciunt
+                nuncera permano nence of the stars from which we spring.
+              </div>
+              <div><a href="" class="font fontwhite">Lobrisa/Chicago</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="just border-top">
+          <div width="1000px" class="fontfr font">May, 2018 – Jun, 2019</div>
+          <div class="flex-left">
+            <div class="fontbck flex-column">
+              <div
+                style="padding-bottom: 10px; color: #f7914d; font-weight: 700"
+                class="font"
+              >
+                Senior Developer
+              </div>
+              <div class="font">
+                Molestie a iaculis at erat pellentesque adipiscing. Porttitor
+                eget dolor morbi non arcu risus quis varius quam. Odio aenean
+                sed adipiscing diam donec. Id diam maecenas ultricies mi eget
+                mauris.
+              </div>
+              <div><a href="" class="font fontwhite">Faucibuse/Seattle</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="just border-top">
+          <div width="1000px" class="fontfr font">
+            Jun, 2019 – December, 2020
+          </div>
+          <div class="flex-left">
+            <div class="fontbck flex-column">
+              <div
+                style="padding-bottom: 10px; color: #f7914d; font-weight: 700"
+                class="font"
+              >
+                Senior Developer
+              </div>
+              <div class="font">
+                Etiam erat velit scelerisque in dictum non consectetur. Nisl
+                purus in mollis nunc sed id semper. Cras fermentum odio eu
+                feugiat pretium nibh ipsum. Tristique senectus et netus et
+                malesuada fames.
+              </div>
+              <div>
+                <a href="" class="font fontwhite">Reesturato/New York</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="just border-top">
+          <div width="1000px" class="fontfr font">Dec, 2020 – current</div>
+          <div class="flex-left">
+            <div class="fontbck flex-column">
+              <div
+                style="padding-bottom: 10px; color: #f7914d; font-weight: 700"
+                class="font"
+              >
+                CEO
+              </div>
+              <div class="font">
+                Etiam erat velit scelerisque in dictum non consectetur. Nisl
+                purus in mollis nunc sed id semper. Cras fermentum odio eu
+                feugiat pretium nibh ipsum. Tristique senectus et netus et
+                malesuada fames.
+              </div>
+              <div>
+                <a href="" class="font fontwhite">Ercussa/San Francisco</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center>
+          <button><a class="font fontwhite">CONTACT ME</a></button>
+        </center>
+      </div>
+    </div>
+    <div class="page">
+      <h1 class="fontfr" style="text-align: center">Portofolio</h1>
+      <p class="fontbck font" style="text-align: center">
+        Quam quisque id diam vel quam elementum. Vestibulum lectus mauris
+        ultrices eros in cursus turpis massa tincidunt. Pellentesque habitant
+        morbi tristique senectus et netus.
+      </p>
+
+      <div class="porto">
+        <div>
+          <figure>
+            <img src="./wd1.png" alt="" />
+            <figcaption>Website Design</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="./ma1.png" alt="" />
+            <figcaption>Mobile Aplication</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="./cd1.png" alt="" />
+            <figcaption>Corporate Design</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="./ma2.png" alt="" />
+            <figcaption>Mobile Aplication</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="./rd1.png" alt="" />
+            <figcaption>Responsive Design</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="./dp1.png" alt="" />
+            <figcaption>Digital Product</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/0088712d1b.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
