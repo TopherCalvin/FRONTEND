@@ -12,6 +12,9 @@
           width: 300px;
           justify-content: space-between;
         }
+        .left {
+          width: 50%;
+        }
       }
       @media screen and (min-width: 520px) {
         .flex-left {
@@ -109,6 +112,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
       }
       .fontwhite {
         color: white;
@@ -159,13 +163,13 @@
           <br />
           <div class="info">
             <div class="just">
-              <div width="1000px" class="fontfr font">Date of Birth:</div>
+              <div class="fontfr font left">Date of Birth:</div>
               <div class="flex-left">
                 <div class="fontbck font">Oktober 30, 2000</div>
               </div>
             </div>
             <div class="just">
-              <div width="100px" class="fontfr font">Address:</div>
+              <div class="fontfr font left">Address :</div>
               <div class="flex-left">
                 <div class="fontbck font">
                   Jl. XimX No. XX, Rt/Rw. 0X1/00X, Duren Tiga, PanXXraX, Jakarta
@@ -174,25 +178,32 @@
               </div>
             </div>
             <div class="just">
-              <div width="100px" class="fontfr font">E-mail:</div>
+              <div class="fontfr font left">E-mail :</div>
               <div class="flex-left">
                 <div class="fontbck font">Topher😎😎@mail.com</div>
               </div>
             </div>
             <div class="just">
-              <div width="100px" class="fontfr font">Phone:</div>
+              <div class="fontfr font left">Phone :</div>
               <div class="flex-left">
                 <div class="fontbck font">+628 212 230 XXXX</div>
               </div>
             </div>
           </div>
           <br />
-          <center>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 180px;
+            "
+          >
             <button>
               <a class="font fontwhite">DOWNLOAD CV</a>
               <i class="fa-solid fa-download fa-lg" style="color: #ffffff"></i>
             </button>
-          </center>
+          </div>
         </div>
         <div class="dick">
           <img src="./dick.png" alt="Dick Grayson" height="auto" width="100%" />
@@ -206,8 +217,11 @@
           Nunc sed blandit libero volutpat sed cras. Risus quis varius quam
           quisque id. Semper auctor neque vitae tempus quam pellentesque.
         </p>
-        <div class="just border-top">
-          <div width="1000px" class="fontfr font">
+        <div class="border-top" style="display: flex; align-items: center">
+          <div
+            class="fontfr font"
+            style="text-align: center; width: 50%; height: 100%"
+          >
             September, 2016 – May, 2017
           </div>
           <div class="flex-left">
@@ -229,8 +243,13 @@
             </div>
           </div>
         </div>
-        <div class="just border-top">
-          <div width="1000px" class="fontfr font">May, 2018 – Jun, 2019</div>
+        <div class="border-top" style="display: flex; align-items: center">
+          <div
+            style="text-align: center; width: 50%; height: 100%"
+            class="fontfr font"
+          >
+            May, 2018 – Jun, 2019
+          </div>
           <div class="flex-left">
             <div class="fontbck flex-column">
               <div
@@ -249,8 +268,11 @@
             </div>
           </div>
         </div>
-        <div class="just border-top">
-          <div width="1000px" class="fontfr font">
+        <div class="border-top" style="display: flex; align-items: center">
+          <div
+            style="text-align: center; width: 50%; height: 100%"
+            class="fontfr font"
+          >
             Jun, 2019 – December, 2020
           </div>
           <div class="flex-left">
@@ -273,8 +295,13 @@
             </div>
           </div>
         </div>
-        <div class="just border-top">
-          <div width="1000px" class="fontfr font">Dec, 2020 – current</div>
+        <div class="border-top" style="display: flex; align-items: center">
+          <div
+            style="text-align: center; width: 50%; height: 100%"
+            class="fontfr font"
+          >
+            Dec, 2020 – current
+          </div>
           <div class="flex-left">
             <div class="fontbck flex-column">
               <div
@@ -309,42 +336,34 @@
       </p>
 
       <div class="porto">
-        <div>
-          <figure>
-            <img src="./wd1.png" alt="" />
-            <figcaption>Website Design</figcaption>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <img src="./ma1.png" alt="" />
-            <figcaption>Mobile Aplication</figcaption>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <img src="./cd1.png" alt="" />
-            <figcaption>Corporate Design</figcaption>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <img src="./ma2.png" alt="" />
-            <figcaption>Mobile Aplication</figcaption>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <img src="./rd1.png" alt="" />
-            <figcaption>Responsive Design</figcaption>
-          </figure>
-        </div>
-        <div>
-          <figure>
-            <img src="./dp1.png" alt="" />
-            <figcaption>Digital Product</figcaption>
-          </figure>
-        </div>
+        <figure>
+          <img src="./wd1.png" alt="" />
+          <figcaption>Website Design</figcaption>
+        </figure>
+        <figure>
+          <img src="./ma1.png" alt="" />
+          <figcaption>Mobile Aplication</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./cd1.png" alt="" />
+          <figcaption>Corporate Design</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./ma2.png" alt="" />
+          <figcaption>Mobile Aplication</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./rd1.png" alt="" />
+          <figcaption>Responsive Design</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./dp1.png" alt="" />
+          <figcaption>Digital Product</figcaption>
+        </figure>
       </div>
     </div>
   </body>
